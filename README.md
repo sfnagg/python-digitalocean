@@ -3,6 +3,7 @@
 # Docker
 
 `docker build -t py-do .`
+
 `docker run -e API_TOKEN=XXXXXXXXXXXXXX -e DOMAIN_NAME=my.domain.com -it --rm --name py-do py-do python manage_droplets.py list|create|destroy|dkim|help`
 
 Рекомендую сохранить API токен в файле и далее забирать ключ из файла, выставить права 600:
