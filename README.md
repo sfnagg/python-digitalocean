@@ -9,7 +9,9 @@
 Рекомендую сохранить API токен в файле и далее забирать ключ из файла, выставить права 600:
 
 `echo XXXXXXXXXXXXXX > ~/.mysecret_api.key`
+
 `chmod 600 ~/.mysecret_api.key`
+
 `docker run -e API_TOKEN=`cat ~/.mysecret_api.key` -e DOMAIN_NAME=my.domain.com -it --rm --name py-do py-do python manage_droplets.py list|create|destroy|dkim|help`
 
 Для удобства работы создать алиас:
