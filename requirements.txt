@@ -9,5 +9,5 @@ pylint==1.7.1
 python-digitalocean==1.11
 requests==2.18.1
 six==1.10.0
-urllib3==1.21.1
+urllib3==1.24.2
 wrapt==1.10.10
