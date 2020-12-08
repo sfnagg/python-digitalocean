@@ -67,7 +67,7 @@ def create_droplet():
     droplet = digitalocean.Droplet(token=API_TOKEN,
                                    name=droplet_name + '.' + DOMAIN_NAME,
                                    region='fra1',
-                                   image='centos-6-x64',
+                                   image='centos-7-x64',
                                    size_slug='1gb',
                                    backups=False)
     delete_dns_record(droplet) # if DNS record for unexisting droplet exists
