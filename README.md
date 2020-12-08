@@ -27,7 +27,7 @@ alias manage_droplets="docker run -e API_TOKEN=XXXXXXXXXXXXXX -e DOMAIN_NAME=my.
 # Использование
 
 * `python manage_droplets.py list` - выведет список дроплетов  
-* `python manage_droplets.py create` - попросит ввести короткий хостнейм, после создаст дроплет с CentOS 6 и A-запись в домене (в скобках предложит имя по умолчанию)  
+* `python manage_droplets.py create` - попросит ввести короткий хостнейм, после создаст дроплет с CentOS 7 и A-запись в домене (в скобках предложит имя по умолчанию)  
 * `python manage_droplets.py destroy` - выведет список дроплетов, попросит указать какой из них нужно удалить, удалит дроплет и A-запись  
 * `python manage_droplets.py dkim` - запросит ID дроплета и содержимое DKIM-ключа  
 * `python manage_droplets.py help` - помощь по субкомандам  
