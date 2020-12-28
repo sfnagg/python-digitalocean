@@ -1,6 +1,20 @@
 # python-digitalocean
 
-# Docker
+# Docker auto builds
+
+Docker Hub: https://hub.docker.com/r/sfnagg/python-digitalocean
+
+Рекомендую сохранить API токен в файле и далее забирать ключ из файла, выставить права 600:
+
+`echo XXXXXXXXXXXXXX > ~/.mysecret_api.key`
+
+`chmod 600 ~/.mysecret_api.key`
+
+Создать алиас для команды запуска (~/.bashrc или ~/.zshrc)
+
+alias manage_droplets="docker run -e API_TOKEN=`cat ~/.mysecret_api.key` -e DOMAIN_NAME=my.domain.com -it --rm --name py-do sfnagg/python-digitalocean python manage_droplets.py"
+
+# Docker manual builds
 
 `docker build -t py-do .`
 
